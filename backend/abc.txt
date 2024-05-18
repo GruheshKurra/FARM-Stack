@@ -1,0 +1,10 @@
+How to run the Project?
+
+BACKEND:
+1.) cd backend
+2.) uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+FRONDEND:
+1.) cd frontend
+2.) $env:NODE_OPTIONS="--openssl-legacy-provider"
+3.) npm start
