@@ -44,3 +44,5 @@ Before you begin, ensure you have the following installed:
    ```sh
    git clone https://github.com/yourusername/blog-website.git
    cd blog-website/backend
+   uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
