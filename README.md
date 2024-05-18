@@ -49,6 +49,7 @@ Before you begin, ensure you have the following installed:
 
    ```sh
    cd blog-website/frontend
+   $env:NODE_OPTIONS="--openssl-legacy-provider"
    npm start
    ```
 
