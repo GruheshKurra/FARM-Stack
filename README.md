@@ -607,10 +607,7 @@ class Blog(BaseModel):
    ![View Blog Detail](./Assets/viewblog.png)
    - *Description: This screenshot shows the detailed view of a blog post when a user clicks on the 'View' button.*
   
-<video width="800" controls>
-  <source src="./Assets/FarmStack Updated.mkv" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch the video](https://vimeo.com/948800709)
 
 
 ## Conclusion
