@@ -143,7 +143,7 @@ blog-website/
 
 ## Frontend Code
 
-### \`App.js\`
+### \App.js\
 
 ```javascript
 import React, { useState, useEffect } from "react";
