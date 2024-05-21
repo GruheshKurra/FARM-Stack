@@ -606,6 +606,11 @@ class Blog(BaseModel):
 8. **View Blog Detail:**
    ![View Blog Detail](./Assets/viewblog.png)
    - *Description: This screenshot shows the detailed view of a blog post when a user clicks on the 'View' button.*
+  
+<video width="800" controls>
+  <source src="./Assets/FarmStack Updated.mkv" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ## Conclusion
@@ -613,7 +618,5 @@ class Blog(BaseModel):
 This project demonstrates a full-stack application using React for the frontend, FastAPI for the backend, and MongoDB for the database. The application supports CRUD operations for blog posts with real-time updates using WebSockets.
 
 By following this guide, you should be able to set up and run the application on your local machine. Feel free to explore the code and make any improvements or modifications as needed. Contributions to the project are welcome through pull requests or by opening issues.
-
-For a complete walkthrough of the project, you can refer to the video tutorial [here](path/to/video-tutorial).
 
 Happy coding!
