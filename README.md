@@ -324,3 +324,107 @@ export default App;
 ```
 
 ### \`BlogListView.js\`
+
+```javascript
+import React, { useState, useEffect } from "react";
+import React from "react";
+import BlogItem from "./BlogItem";
+
+export default function BlogView(props) {
+  return (
+    <div className="row">
+      {props.blogList.map((blog) => (
+        <div className="col-md-4 mb-4" key={blog.title}>
+          <BlogItem
+            blog={blog}
+            refreshBlogs={props.refreshBlogs}
+            editBlogHandler={props.editBlogHandler}
+            viewBlogHandler={props.viewBlogHandler}
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+```
+
+### \`BlogItem.js\`
+
+```javascript
+import React from "react";
+import axios from "axios";
+
+function BlogItem(props) {
+  const deleteBlogHandler = (title) => {
+    axios.delete(`http://localhost:8000/api/blog/${title}`).then((res) => {
+      console.log(res.data);
+      props.refreshBlogs(); // Refresh the blog list
+    });
+  };
+
+  const editBlogHandler = () => {
+    props.editBlogHandler(props.blog);
+  };
+
+  const viewBlogHandler = () => {
+    props.viewBlogHandler(props.blog);
+  };
+
+  return (
+    <div className="card mb-3">
+      <img
+        src={props.blog.image_url}
+        className="card-img-top"
+        alt={props.blog.title}
+      />
+      <div className="card-body">
+        <h5 className="card-title">{props.blog.title}</h5>
+        <p className="card-text">{props.blog.content.substring(0, 100)}...</p>
+        <button onClick={viewBlogHandler} className="btn btn-primary">
+          View
+        </button>
+        <button onClick={editBlogHandler} className="btn btn-info mx-2">
+          Edit
+        </button>
+        <button
+          onClick={() => deleteBlogHandler(props.blog.title)}
+          className="btn btn-danger"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default BlogItem;
+
+```
+
+### \`BlogDetail.js\`
+
+```javascript
+import React from "react";
+
+const BlogDetail = ({ blog, closeHandler }) => {
+  return (
+    <div className="blog-detail">
+      <button className="btn btn-secondary mb-3" onClick={closeHandler}>
+        Close
+      </button>
+      <h2>{blog.title}</h2>
+      <img
+        src={blog.image_url}
+        alt={blog.title}
+        style={{ width: "50%", margin: "0 auto", display: "block" }}
+      />
+      <p className="text-center">{blog.content}</p>
+    </div>
+  );
+};
+
+export default BlogDetail;
+
+```
+
