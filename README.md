@@ -52,9 +52,9 @@ Before you begin, ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-3.  **Ensure the requirements.txt includes:**
+3. **Ensure the requirements.txt includes:**
 
-   ```txt
+   ```sh
    fastapi
    uvicorn[standard]
    pydantic
