@@ -1,7 +1,3 @@
-# Create the README.md file content
-readme_content = """
-# Blog Website with React, FastAPI, and MongoDB
-
 This project is a blog website built using React for the frontend, FastAPI for the backend, and MongoDB for the database. The website supports CRUD operations for blog posts, including real-time updates using WebSockets.
 
 ## Table of Contents
