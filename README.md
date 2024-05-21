@@ -575,22 +575,38 @@ class Blog(BaseModel):
 
 ## Screenshots
 
-Here you would include screenshots of the following:
+1. **Add Blog Form:**
+   ![Add Blog Form](./Assets/addblog.png)
+   - *Description: This is the form where users can add a new blog post by entering the title, content, and image URL.*
 
-1. **Home Page:**
-   ![Home Page](path/to/homepage-screenshot.png)
+2. **Blog Added Successfully:**
+   ![Blog Added Successfully](./Assets/blogadded.png)
+   - *Description: This screenshot shows the notification that appears when a blog is successfully added, along with the newly added blog post displayed in the list.*
 
-2. **Add Blog Form:**
-   ![Add Blog](path/to/add-blog-screenshot.png)
+3. **Blog Form:**
+   ![Blog Form](./Assets/blogform.png)
+   - *Description: The initial state of the blog form before adding any content.*
 
-3. **Blog List:**
-   ![Blog List](path/to/blog-list-screenshot.png)
+4. **MongoDB Empty Collection:**
+   ![MongoDB Empty Collection](./Assets/mongodb_empty.png)
+   - *Description: This is the MongoDB Compass view showing an empty collection before any blogs are added.*
 
-4. **Blog Detail View:**
-   ![Blog Detail](path/to/blog-detail-screenshot.png)
+5. **MongoDB Inserted Data:**
+   ![MongoDB Inserted Data](./Assets/mongodbinsert.png)
+   - *Description: This is the MongoDB Compass view showing the collection with the newly added blog post.*
 
-5. **Edit Blog Form:**
-   ![Edit Blog](path/to/edit-blog-screenshot.png)
+6. **Update Blog Form:**
+   ![Update Blog Form](./Assets/updateblog.png)
+   - *Description: This is the form where users can update an existing blog post. The form is pre-filled with the current blog data.*
+
+7. **Blog Updated Successfully:**
+   ![Blog Updated Successfully](./Assets/updatedblog.png)
+   - *Description: This screenshot shows the notification that appears when a blog is successfully updated, along with the updated blog post displayed in the list.*
+
+8. **View Blog Detail:**
+   ![View Blog Detail](./Assets/viewblog.png)
+   - *Description: This screenshot shows the detailed view of a blog post when a user clicks on the 'View' button.*
+
 
 ## Conclusion
 
