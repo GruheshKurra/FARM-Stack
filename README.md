@@ -606,8 +606,6 @@ class Blog(BaseModel):
 8. **View Blog Detail:**
    ![View Blog Detail](./Assets/viewblog.png)
    - *Description: This screenshot shows the detailed view of a blog post when a user clicks on the 'View' button.*
-  
-[Watch the video](https://vimeo.com/948800709)
 
 
 ## Conclusion
