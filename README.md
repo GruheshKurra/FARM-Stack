@@ -41,35 +41,35 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository:**
 
-   \`\`\`sh
+   ```sh
    git clone https://github.com/yourusername/blog-website.git
    cd blog-website/backend
-   \`\`\`
+   ```
 
 2. **Create a virtual environment and activate it:**
 
-   \`\`\`sh
+   ```sh
    python -m venv env
    source env/bin/activate  # On Windows use `env\\Scripts\\activate`
-   \`\`\`
+   ```
 
 3. **Install the required packages:**
 
-   \`\`\`sh
+   ```sh
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
    Ensure the \`requirements.txt\` includes:
 
-   \`\`\`txt
+   ```txt
    fastapi
    uvicorn[standard]
    pydantic
    motor
-   \`\`\`
+   ```
 
 4. **Run the FastAPI server:**
 
-   \`\`\`sh
+   ```sh
    uvicorn main:app --reload --host 0.0.0.0 --port 8000
-   \`\`\`
+   ```
