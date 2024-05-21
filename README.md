@@ -42,24 +42,17 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/blog-website.git
+   git clone https://github.com/GruheshKurra/FARM-Stack.git
    cd blog-website/backend
    ```
 
-2. **Create a virtual environment and activate it:**
-
-   ```sh
-   python -m venv env
-   source env/bin/activate  # On Windows use `env\\Scripts\\activate`
-   ```
-
-3. **Install the required packages:**
+2. **Install the required packages:**
 
    ```sh
    pip install -r requirements.txt
    ```
 
-   Ensure the requirements.txt includes:
+3.  Ensure the requirements.txt includes:
 
    ```txt
    fastapi
@@ -88,7 +81,13 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-3. **Start the React development server:**
+3. **Setting Node.js Environment for Legacy OpenSSL Provider Usage**
+
+   ```sh
+   $env:NODE_OPTIONS="--openssl-legacy-provider"
+   ```
+
+4. **Start the React development server:**
 
    ```sh
    npm start
@@ -574,3 +573,31 @@ class Blog(BaseModel):
 
 ```
 
+## Screenshots
+
+Here you would include screenshots of the following:
+
+1. **Home Page:**
+   ![Home Page](path/to/homepage-screenshot.png)
+
+2. **Add Blog Form:**
+   ![Add Blog](path/to/add-blog-screenshot.png)
+
+3. **Blog List:**
+   ![Blog List](path/to/blog-list-screenshot.png)
+
+4. **Blog Detail View:**
+   ![Blog Detail](path/to/blog-detail-screenshot.png)
+
+5. **Edit Blog Form:**
+   ![Edit Blog](path/to/edit-blog-screenshot.png)
+
+## Conclusion
+
+This project demonstrates a full-stack application using React for the frontend, FastAPI for the backend, and MongoDB for the database. The application supports CRUD operations for blog posts with real-time updates using WebSockets.
+
+By following this guide, you should be able to set up and run the application on your local machine. Feel free to explore the code and make any improvements or modifications as needed. Contributions to the project are welcome through pull requests or by opening issues.
+
+For a complete walkthrough of the project, you can refer to the video tutorial [here](path/to/video-tutorial).
+
+Happy coding!
