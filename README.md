@@ -59,7 +59,7 @@ Before you begin, ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-   Ensure the \`requirements.txt\` includes:
+   Ensure the requirements.txt includes:
 
    ```txt
    fastapi
@@ -143,7 +143,7 @@ blog-website/
 
 ## Frontend Code
 
-### \`App.js\`
+### App.js
 
 ```javascript
 import React, { useState, useEffect } from "react";
@@ -175,7 +175,7 @@ function App() {
     };
 
     socket.onmessage = function (event) {
-      console.log(\`Received data: \${event.data}\`);
+      console.log(Received data: \${event.data});
       if (event.data === "update") {
         refreshBlogs();
         toast.info("Real-time update received");
@@ -229,7 +229,7 @@ function App() {
   };
 
   const updateBlogHandler = () => {
-    axios.put(\`http://localhost:8000/api/blog/\${currentBlog.title}/\`, {
+    axios.put(http://localhost:8000/api/blog/\${currentBlog.title}/, {
       title: title || currentBlog.title,
       content: content || currentBlog.content,
       image_url: imageURL || currentBlog.image_url,
@@ -323,7 +323,7 @@ function App() {
 export default App;
 ```
 
-### \`BlogListView.js\`
+### BlogListView.js
 
 ```javascript
 import React, { useState, useEffect } from "react";
@@ -349,7 +349,7 @@ export default function BlogView(props) {
 
 ```
 
-### \`BlogItem.js\`
+### BlogItem.js
 
 ```javascript
 import React from "react";
@@ -402,7 +402,7 @@ export default BlogItem;
 
 ```
 
-### \`BlogDetail.js\`
+### BlogDetail.js
 
 ```javascript
 import React from "react";
@@ -430,7 +430,7 @@ export default BlogDetail;
 
 ## Backend Code
 
-### \`database.py\`
+### database.py
 
 ```python
 import motor.motor_asyncio
@@ -466,7 +466,7 @@ async def remove_blog(title):
     return True
 ```
 
-### \`main.py\`
+### main.py
 
 ```python
 import asyncio
@@ -562,7 +562,7 @@ async def notify_clients():
         await client.send_text("update")
 ```
 
-### \`model.py\`
+### model.py
 
 ```python
 from pydantic import BaseModel
